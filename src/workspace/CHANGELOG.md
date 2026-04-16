@@ -1,0 +1,1 @@
+See REGISTRO DE CAMBIOS.md for the active changelog.

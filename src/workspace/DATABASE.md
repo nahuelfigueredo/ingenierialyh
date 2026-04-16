@@ -1,0 +1,1 @@
+See BASE DE DATOS.md for the active database notes.

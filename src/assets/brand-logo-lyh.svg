@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 170" role="img" aria-label="Ingenieria LYH">
+	<rect x="12" y="54" width="260" height="36" fill="#ffffff" stroke="#081536" stroke-width="6" />
+	<text x="24" y="82" fill="#081536" font-size="44" font-weight="900" font-family="Arial Black, Arial, Helvetica, sans-serif">INGENIERIA</text>
+
+	<path fill="#081536" d="M300 14h22v16c0 5-4 9-9 9h-13z" />
+	<path fill="#081536" d="M340 14h148v20H356c-8 0-14 6-14 14v48c0 8 6 14 14 14h132v20H340c-13 0-24-11-24-24V38c0-13 11-24 24-24z" />
+	<path fill="#081536" d="M530 14h24v16c0 5-4 9-9 9h-15z" />
+	<path fill="#081536" d="M570 14h24v20h-10c-8 0-14 6-14 14v82h-24V38c0-13 11-24 24-24z" />
+	<path fill="#081536" d="M602 14h24v116h-24z" />
+
+	<text x="454" y="96" fill="#081536" text-anchor="middle" font-size="116" font-weight="900" font-family="Georgia, Times New Roman, serif">L&amp;H</text>
+	<rect x="354" y="104" width="212" height="4" fill="#081536" />
+	<text x="460" y="130" fill="#081536" text-anchor="middle" font-size="20" font-weight="800" font-family="Arial, Helvetica, sans-serif" letter-spacing="0.7">CONSTRUCCIONES</text>
+	<text x="460" y="152" fill="#081536" text-anchor="middle" font-size="20" font-weight="800" font-family="Arial, Helvetica, sans-serif" letter-spacing="0.7">MONTAJE INDUSTRIAL</text>
+</svg>
