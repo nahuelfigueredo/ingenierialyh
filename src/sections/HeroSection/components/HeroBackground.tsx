@@ -1,4 +1,4 @@
-import headerVideo from "@/assets/header.mp4";
+const headerVideo = "https://res.cloudinary.com/djos2a5dj/video/upload/v1772394456/header_video-converter.com_1_xqao3v.mp4";
 
 export const HeroBackground = () => {
   return (
