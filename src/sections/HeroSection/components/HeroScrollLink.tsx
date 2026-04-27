@@ -2,13 +2,13 @@ export const HeroScrollLink = () => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     document
-      .getElementById("capabilities-section")
+      .getElementById("projects-section")
       ?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <a
-      href="#capabilities-section"
+      href="#projects-section"
       onClick={handleClick}
       className="absolute bottom-0 right-0 z-[3] flex items-stretch transition-opacity hover:opacity-90"
     >

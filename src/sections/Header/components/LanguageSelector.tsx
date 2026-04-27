@@ -25,7 +25,7 @@ export const LanguageSelector = () => {
         onClick={() => setOpen(!open)}
         className="flex items-center bg-transparent text-center p-0 cursor-pointer"
       >
-        <span className="text-[13px] leading-[15.6px] uppercase">
+        <span className="text-[16px] leading-[19px] uppercase">
           {selected}
         </span>
 

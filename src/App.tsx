@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { CapabilitiesSection } from "./sections/CapabilitiesSection";
 import { CookieBanner } from "./components/cookieBanner";
 import { Footer } from "./sections/Footer";
@@ -14,6 +15,17 @@ import { SustainabilitySection } from "./sections/SustainabilitySection";
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showCookies, setShowCookies] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollTo = (location.state as any)?.scrollTo;
+    if (scrollTo) {
+      setTimeout(() => {
+        const el = document.getElementById(scrollTo);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  }, [location.state]);
 
   return (
     <div className="min-h-screen bg-white text-zinc-500">

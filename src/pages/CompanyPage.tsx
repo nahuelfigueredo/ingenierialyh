@@ -3,7 +3,7 @@ import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
 import { CompanyContent } from "@/sections/CompanySection/components/CompanyContent";
-import heroBg from "@/assets/Fabricacion-de-Chimenea.jpg";
+import heroBg from "@/assets/prueba6.jpeg";
 import videoPoster from "@/assets/tinglado.jpg";
 
 export const CompanyPage = () => {
@@ -11,10 +11,22 @@ export const CompanyPage = () => {
   const [videoOpen, setVideoOpen] = useState(false);
 
   const stats = [
-    { number: "+20", label: "años de experiencia en el sector industrial." },
-    { number: "+500", label: "proyectos realizados en todo el país." },
-    { number: "+200", label: "profesionales especializados." },
-    { number: "+50", label: "clientes activos en oil & gas y petroquímica." },
+    {
+      number: "Calidad y seguridad",
+      label: "Planificamos y ejecutamos cada proyecto con foco en estándares técnicos, prevención y control en obra.",
+    },
+    {
+      number: "Equipo multidisciplinario",
+      label: "Integramos perfiles de ingeniería, montaje y gestión para responder con agilidad a cada necesidad.",
+    },
+    {
+      number: "Capacidad operativa",
+      label: "Trabajamos en fabricación, montaje y mantenimiento industrial con recursos propios y coordinación integral.",
+    },
+    {
+      number: "Compromiso con el cliente",
+      label: "Acompañamos cada etapa con comunicación clara, cumplimiento y soporte técnico permanente.",
+    },
   ];
   const STAT_CARD_WIDTH = 420 + 16;
   const statsRef = useRef<HTMLDivElement>(null);
@@ -64,22 +76,21 @@ export const CompanyPage = () => {
 
       <main>
         {/* Hero */}
-        <div className="relative h-[500px] md:h-[640px] w-full overflow-visible">
+        <div className="relative h-[340px] md:h-[640px] w-full overflow-visible">
           <img
             src={heroBg}
             alt="Nuestra empresa"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-sky-950/40" />
-          <div className="relative z-10 flex flex-col justify-center h-full max-w-[1600px] mx-auto px-[34px] md:px-20">
-            <span className="block text-white/80 text-sm mb-4">Quiénes somos</span>
-            <h1 className="text-white text-5xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[800px]">
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-6 md:pb-36">
+            <span className="block text-white/80 text-sm mb-2 md:mb-4">Quiénes somos</span>
+            <h1 className="text-white text-3xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[800px]">
               Un socio confiable para cada desafío
             </h1>
           </div>
 
-          {/* Intro card overlapping hero */}
-          <div className="absolute bottom-0 translate-y-[70%] left-0 right-0 z-20 px-[34px] md:px-20">
+          {/* Intro card overlapping hero — solo desktop */}
+          <div className="hidden md:block absolute bottom-0 translate-y-[70%] left-0 right-0 z-20 px-[34px] md:px-20">
             <div className="bg-white max-w-[1600px] mx-auto px-10 md:px-16 py-10 md:py-14 shadow-md">
               <p className="text-sky-950 text-xl md:text-3xl leading-relaxed max-w-[900px]">
                 Ingeniería L&H trabaja para ofrecer servicios, bienes y Obras para el Mantenimiento, Construcción de Equipos y Plantas de Proceso. Desarrollamos una fuerte especialización en Intercambiadores de calor, Hornos de proceso, Acumuladores y Columnas de Destilación.
@@ -88,8 +99,15 @@ export const CompanyPage = () => {
           </div>
         </div>
 
-        {/* Spacer for overlapping card */}
-        <div className="h-[200px] md:h-[260px] bg-white" />
+        {/* Intro card mobile — debajo del hero, sin superposición */}
+        <div className="md:hidden bg-white px-8 py-8 shadow-md">
+          <p className="text-sky-950 text-lg leading-relaxed">
+            Ingeniería L&H trabaja para ofrecer servicios, bienes y Obras para el Mantenimiento, Construcción de Equipos y Plantas de Proceso. Desarrollamos una fuerte especialización en Intercambiadores de calor, Hornos de proceso, Acumuladores y Columnas de Destilación.
+          </p>
+        </div>
+
+        {/* Spacer for overlapping card — solo desktop */}
+        <div className="hidden md:block h-[260px] bg-white" />
 
         {/* Video section */}
         <div className="relative w-full h-[380px] md:h-[500px] overflow-hidden">
@@ -147,7 +165,7 @@ export const CompanyPage = () => {
         {/* Stats carousel */}
         <div className="bg-zinc-100 py-[60px] md:py-[80px]">
           <div className="mx-auto max-w-[1600px] px-[34px] md:px-20">
-            <h2 className="text-sky-950 text-lg mb-10">L&H en números</h2>
+            <h2 className="text-sky-950 text-lg mb-10">Nuestros diferenciales</h2>
 
             {/* Track */}
             <div
@@ -163,8 +181,8 @@ export const CompanyPage = () => {
               onTouchEnd={handleStatDragEnd}
             >
               {stats.map((stat, i) => (
-                <div key={i} className="shrink-0 bg-white p-10 md:p-12 w-[75vw] md:w-[420px] min-h-[220px] flex flex-col justify-between">
-                  <span className="text-sky-950 text-5xl md:text-6xl font-semibold">{stat.number}</span>
+                <div key={i} className="shrink-0 bg-white p-10 md:p-12 w-[75vw] md:w-[420px] min-h-[240px] flex flex-col justify-between">
+                  <h3 className="text-sky-950 text-2xl md:text-3xl font-semibold leading-tight">{stat.number}</h3>
                   <p className="text-zinc-500 text-sm mt-6 leading-relaxed">{stat.label}</p>
                 </div>
               ))}

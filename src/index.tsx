@@ -1,6 +1,14 @@
-import { StrictMode } from "react";
+import { StrictMode, useEffect } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 import App from "./App";
 import { CompanyPage } from "./pages/CompanyPage";
 import { MisionPage } from "./pages/MisionPage";
@@ -19,11 +27,14 @@ import { EstructurasDetallePage } from "./pages/proyectos/EstructurasDetallePage
 import { MetalurgiaDetallePage } from "./pages/proyectos/MetalurgiaDetallePage";
 import { ClientesPage } from "./pages/ClientesPage";
 import { ContactoPage } from "./pages/ContactoPage";
+import { ProveedoresPage } from "./pages/ProveedoresPage";
+import { GruasElevacionPage } from "./pages/GruasElevacionPage";
 import "./tailwind.css";
 
 createRoot(document.getElementById("app")!).render(
   <StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/nuestra-empresa" element={<CompanyPage />} />
@@ -43,6 +54,8 @@ createRoot(document.getElementById("app")!).render(
         <Route path="/proyectos/metalurgia/:id" element={<MetalurgiaDetallePage />} />
         <Route path="/clientes" element={<ClientesPage />} />
         <Route path="/contacto" element={<ContactoPage />} />
+        <Route path="/proveedores" element={<ProveedoresPage />} />
+        <Route path="/alquiler-de-flota/gruas-elevacion" element={<GruasElevacionPage />} />
       </Routes>
     </HashRouter>
   </StrictMode>,

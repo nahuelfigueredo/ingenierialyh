@@ -16,8 +16,8 @@ export const LiderazgoPage = () => {
         {/* Hero */}
         <div className="relative h-[480px] md:h-[560px] w-full overflow-hidden">
           <img src={heroBg} alt="Liderazgo" className="absolute inset-0 w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-sky-950/30" />
-          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-12 md:pb-16">
+
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-28 md:pb-36">
             <span className="block text-white/70 text-sm mb-3">Quiénes somos</span>
             <h1 className="text-white text-4xl md:text-6xl font-medium leading-tight tracking-[-1px] max-w-[700px]">
               Liderazgo

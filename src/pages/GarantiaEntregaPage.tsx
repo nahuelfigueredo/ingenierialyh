@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
-import heroBg from "@/assets/TINGLADO.jpg";
+import heroBg from "@/assets/prueba8.jpeg";
 import garantiaImg from "@/assets/garantia.jpeg";
 import obraImg from "@/assets/05.png";
 import garantia2Img from "@/assets/garantia2.png";
@@ -17,46 +17,52 @@ export const GarantiaEntregaPage = () => {
 
       <main>
         {/* Hero */}
-        <div className="relative h-[380px] md:h-[500px] w-full overflow-hidden">
+        <div className="relative h-[300px] md:h-[500px] w-full overflow-hidden">
           <img src={heroBg} alt="Garantía de entrega" className="absolute inset-0 w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-sky-950/40" />
-          <div className="relative z-10 flex flex-col justify-center h-full max-w-[1600px] mx-auto px-[34px] md:px-20">
-            <span className="block text-white/80 text-sm mb-4">Cómo lo hacemos</span>
-            <h1 className="text-white text-5xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[800px]">
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-8 md:pb-36">
+            <span className="block text-white/80 text-sm mb-2 md:mb-4">Cómo lo hacemos</span>
+            <h1 className="text-white text-3xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[800px]">
               Garantía de entrega
             </h1>
           </div>
         </div>
 
-        {/* Cuadro que solapa el hero */}
-        <div className="relative z-20 -mt-16 px-[34px] md:px-20 bg-white pb-0">
-          <div className="bg-white max-w-[1600px] mx-auto px-10 md:px-16 py-10 md:py-14 shadow-md">
-            <p className="text-sky-950 text-xl md:text-3xl leading-relaxed max-w-[900px]">
+        {/* Cuadro intro */}
+        <div className="relative z-20 md:-mt-16 px-[34px] md:px-20 bg-white pb-0">
+          <div className="bg-white max-w-[1600px] mx-auto px-6 md:px-16 py-8 md:py-14 shadow-md">
+            <p className="text-sky-950 text-lg md:text-3xl leading-relaxed max-w-[900px]">
               Cumplimos con cada compromiso asumido. Nuestra metodología de gestión y control de proyectos garantiza la entrega en tiempo, forma y con los más altos estándares de calidad.
             </p>
-            <p className="text-zinc-500 text-base md:text-lg leading-relaxed max-w-[900px] mt-6">
+            <p className="text-zinc-500 text-sm md:text-lg leading-relaxed max-w-[900px] mt-4 md:mt-6">
               Cada proyecto es monitoreado en todas sus etapas, desde la planificación hasta la puesta en marcha, asegurando que los plazos, costos y especificaciones técnicas se cumplan sin excepciones. La confianza de nuestros clientes se construye obra a obra.
             </p>
           </div>
         </div>
 
-        {/* Foto con cuadro superpuesto */}
-        <div className="relative bg-sky-950 h-[600px] md:h-[700px] flex items-end pb-0">
-          {/* Foto a la derecha */}
+        {/* Foto con cuadro superpuesto — desktop */}
+        <div className="hidden md:block relative bg-sky-950 h-[700px] flex items-end pb-0">
           <div className="absolute right-0 top-0 h-full w-[65%]">
             <img src={garantiaImg} alt="Garantía de entrega" className="w-full h-full object-cover" />
           </div>
-          {/* Cuadro blanco superpuesto a la izquierda */}
-          <div className="relative z-10 bg-white ml-0 p-20 md:p-24 max-w-[580px] min-h-[520px] shadow-lg mb-[-80px] flex flex-col justify-center">
+          <div className="relative z-10 bg-white ml-0 p-24 max-w-[580px] min-h-[520px] shadow-lg mb-[-80px] flex flex-col justify-center">
             <span className="text-zinc-400 text-sm block mb-4">Garantía de entrega</span>
-            <h3 className="text-sky-950 text-3xl md:text-4xl font-light leading-tight mb-6">Compromiso en cada etapa</h3>
+            <h3 className="text-sky-950 text-4xl font-light leading-tight mb-6">Compromiso en cada etapa</h3>
             <p className="text-zinc-500 text-base leading-relaxed">Supervisamos cada fase del proyecto con rigor técnico y compromiso total, asegurando resultados que superan las expectativas del cliente. La entrega puntual no es una promesa, es nuestra forma de trabajar.</p>
           </div>
         </div>
 
+        {/* Foto con cuadro — mobile: apilado */}
+        <div className="md:hidden">
+          <img src={garantiaImg} alt="Garantía de entrega" className="w-full h-[240px] object-cover" />
+          <div className="bg-sky-950 px-8 py-10">
+            <span className="text-white/60 text-sm block mb-3">Garantía de entrega</span>
+            <h3 className="text-white text-2xl font-light leading-tight mb-4">Compromiso en cada etapa</h3>
+            <p className="text-white/80 text-sm leading-relaxed">Supervisamos cada fase del proyecto con rigor técnico y compromiso total, asegurando resultados que superan las expectativas del cliente.</p>
+          </div>
+        </div>
 
         {/* Pilares */}
-        <div className="bg-zinc-100 pt-[160px] pb-[60px] md:pt-[200px] md:pb-[80px]">
+        <div className="bg-zinc-100 pt-10 pb-[60px] md:pt-[200px] md:pb-[80px]">
           <div className="mx-auto max-w-[1600px] px-[34px] md:px-20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
@@ -73,12 +79,22 @@ export const GarantiaEntregaPage = () => {
           </div>
         </div>
 
-        {/* Foto debajo de las cards */}
-        <div className="relative mb-[180px]">
-          <img src={garantia2Img} alt="Obra" className="w-full h-[500px] md:h-[600px] object-cover" />
-          <div className="absolute bottom-[-160px] left-[120px] z-10 bg-white p-14 md:p-20 max-w-[620px] shadow-lg">
+        {/* Foto + card "Ejecución en campo" — desktop */}
+        <div className="hidden md:block relative mb-[180px]">
+          <img src={garantia2Img} alt="Obra" className="w-full h-[600px] object-cover" />
+          <div className="absolute bottom-[-160px] left-[120px] z-10 bg-white p-20 max-w-[620px] shadow-lg">
             <span className="text-zinc-400 text-sm block mb-4">Ejecución en campo</span>
-            <h3 className="text-sky-950 text-2xl md:text-3xl font-light leading-tight mb-4">Tecnología y experiencia en cada obra</h3>
+            <h3 className="text-sky-950 text-3xl font-light leading-tight mb-4">Tecnología y experiencia en cada obra</h3>
+            <p className="text-zinc-500 text-sm leading-relaxed">Contamos con equipamiento propio de última generación y equipos especializados que garantizan eficiencia, seguridad y precisión en cada intervención.</p>
+          </div>
+        </div>
+
+        {/* Foto + card "Ejecución en campo" — mobile: apilado */}
+        <div className="md:hidden">
+          <img src={garantia2Img} alt="Obra" className="w-full h-[220px] object-cover" />
+          <div className="bg-white px-8 py-8 shadow-md">
+            <span className="text-zinc-400 text-sm block mb-3">Ejecución en campo</span>
+            <h3 className="text-sky-950 text-xl font-light leading-tight mb-3">Tecnología y experiencia en cada obra</h3>
             <p className="text-zinc-500 text-sm leading-relaxed">Contamos con equipamiento propio de última generación y equipos especializados que garantizan eficiencia, seguridad y precisión en cada intervención.</p>
           </div>
         </div>
@@ -87,7 +103,7 @@ export const GarantiaEntregaPage = () => {
         <div className="bg-sky-950 py-[60px] md:py-[80px]">
           <div className="mx-auto max-w-[1600px] px-[34px] md:px-20">
             <h2 className="text-white text-3xl md:text-4xl font-light tracking-[-1px] mb-12">Nuestro proceso</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
                 { num: "01", title: "Relevamiento", desc: "Analizamos en detalle el alcance, las condiciones del sitio y los requerimientos técnicos y normativos del proyecto." },
                 { num: "02", title: "Ingeniería y planificación", desc: "Desarrollamos la ingeniería de detalle y el plan de ejecución con cronograma, recursos y gestión de riesgos." },
@@ -112,9 +128,9 @@ export const GarantiaEntregaPage = () => {
             </div>
             <div className="md:w-3/4">
               <p className="text-sky-950 text-xl md:text-2xl leading-relaxed mb-8">
-                En L&H Ingeniería, la palabra empeñada tiene el mismo valor que el contrato firmado. Cada obra es una oportunidad de demostrar que el cumplimiento es parte de nuestra identidad.
+                En Ingeniería L&H, la palabra empeñada tiene el mismo valor que el contrato firmado. Cada obra es una oportunidad de demostrar que el cumplimiento es parte de nuestra identidad.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
                 {[
                   { label: "Cumplimiento de plazo", value: "95%" },
                   { label: "Proyectos con cero accidentes", value: "+300" },

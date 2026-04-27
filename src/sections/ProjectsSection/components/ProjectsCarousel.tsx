@@ -7,7 +7,7 @@ import fourthProjectImage from "@/assets/10.jpg";
 
 const projects = [
   {
-    href: "#",
+    href: "/proyectos/metalurgia/reparaciones-vapor-metalurgia",
     imageClass: "",
     imageSrc: firstProjectImage,
     country: "Plaza Huincul, Neuquen YPF.",
@@ -16,7 +16,7 @@ const projects = [
       "Relevamiento e Inspeccion de Canerias Afectadas.\n\nCorte de Costuras/Tramos de Caneria Afectado.\n\nAmolado de extremos hasta metal base en buen estado",
   },
   {
-    href: "#",
+    href: "/proyectos/piping/linea-reflujo-coke-topping",
     imageClass: "",
     imageSrc: secondProjectImage,
     country: "YPF CILP. Complejo industrial la Plata YPF.",
@@ -25,7 +25,7 @@ const projects = [
       "Relevamiento de las instalaciones existentes con ingenieria desarrollada por L&H, para la ejecucion de la obra Piping.\n\nSe realizo la construccion de todas las lineas que intervienen la obra (Ø de 8”).\n\nConstruccion y montaje de toda la soporteria.\n\nMontaje y soldadura de la linea y valvulas para la nueva linea sector Coke A.",
   },
   {
-    href: "#",
+    href: "/proyectos/estructuras/estructuras-refineria-lp",
     imageClass: "",
     imageSrc: thirdProjectImage,
     country: "La Plata, Buenos Aires YPF.",
@@ -34,7 +34,7 @@ const projects = [
       "Al dia de la fecha, se terminaron mas de 90 obras, de modificaciones de plantas y nuevas obras metalurgicas (estructuras y piping), en Refineria La Plata, CIE Ensenada y Puerto La Plata.\n\nDesarrollo de ingenieria, replanteo APC. Propuestas para nuevas ingenierias y mejoras de instalaciones.",
   },
   {
-    href: "#",
+    href: "/proyectos/hornos/h301-h306",
     imageClass: "",
     imageSrc: fourthProjectImage,
     country: "Complejo Industrial Plaza Huincul.",

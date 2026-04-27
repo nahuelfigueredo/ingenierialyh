@@ -1,12 +1,15 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
-import heroBg from "@/assets/garantia.jpeg";
+import heroBg from "@/assets/prueba9.jpeg";
 
 export const ContactoPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [form, setForm] = useState({ nombre: "", empresa: "", email: "", mensaje: "" });
+  const [searchParams] = useSearchParams();
+  const mensajeInicial = searchParams.get("mensaje") ?? "";
+  const [form, setForm] = useState({ nombre: "", empresa: "", email: "", mensaje: mensajeInicial });
   const [enviado, setEnviado] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -26,8 +29,8 @@ export const ContactoPage = () => {
         {/* Hero */}
         <div className="relative h-[380px] md:h-[500px] w-full overflow-hidden">
           <img src={heroBg} alt="Contacto" className="absolute inset-0 w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-sky-950/60" />
-          <div className="relative z-10 flex flex-col justify-center h-full max-w-[1600px] mx-auto px-[34px] md:px-20">
+
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-28 md:pb-36">
             <span className="block text-white/80 text-sm mb-4">L&H Ingeniería</span>
             <h1 className="text-white text-5xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[700px]">
               Contacto

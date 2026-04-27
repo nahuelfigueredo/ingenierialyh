@@ -28,19 +28,26 @@ export const ProfessionalContent = () => {
         </span>
 
         <h2 className="text-sky-950 text-2xl md:text-[26px] leading-[33.6px] md:leading-[36.4px] tracking-[-0.5px] mb-[30px]">
-          Equipos y maquinaria listos para cada desafío
+          Capacidad operativa para cada proyecto
         </h2>
 
-        <p className="leading-[25.6px]">
-          Contamos con una flota propia de vehículos, maquinaria pesada y equipos especializados,
-          mantenidos en óptimas condiciones para garantizar el cumplimiento de cada obra en tiempo y forma.
-          <br /><br />
-          Grúas, camiones, vehículos utilitarios y maquinaria de obra conforman nuestra capacidad
-          operativa para responder a cualquier exigencia del proyecto.
-        </p>
+        <div className="leading-[25.6px] text-inherit">
+          <p>
+            Disponemos de una flota propia de vehiculos, equipos de izaje y
+            maquinaria especializada, preparados para operar en entornos
+            industriales de alta exigencia. Nuestro equipamiento garantiza
+            seguridad, eficiencia y cumplimiento en cada obra.
+          </p>
+
+          <p className="mt-4">
+            Gruas, camiones, unidades 4x4 y equipos de obra forman parte de una
+            estructura operativa diseñada para responder con rapidez y precision
+            a las demandas de cada proyecto.
+          </p>
+        </div>
 
         <a
-          href="#capabilities-section"
+          href="#/alquiler-de-flota"
           className="inline-flex items-center mt-[30px] text-sky-950 hover:opacity-70 transition-opacity"
         >
           <span className="leading-[25.6px]">

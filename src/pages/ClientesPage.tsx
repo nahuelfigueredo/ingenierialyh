@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
-import heroBg from "@/assets/100_1877.JPG";
+import heroBg from "@/assets/prueba5.jpeg";
 import logoCentralDock from "@/assets/clientes/LOGOS CLIENTES/1685051536415.jpg";
 import logoAESA from "@/assets/clientes/LOGOS CLIENTES/1704732677499.jpg";
 import logoAguasYProcesos from "@/assets/clientes/LOGOS CLIENTES/aguas_y_procesos_logo.jpg";
@@ -13,6 +13,7 @@ import logoOldelval from "@/assets/clientes/LOGOS CLIENTES/o_1679184545.jpg";
 import logoYPF from "@/assets/clientes/LOGOS CLIENTES/ypf-logo.png";
 
 const clientes = [
+  { logo: logoYPF, nombre: "YPF" },
   { logo: logoCentralDock, nombre: "Central Dock Sud" },
   { logo: logoAESA, nombre: "AESA" },
   { logo: logoAguasYProcesos, nombre: "Aguas y Procesos" },
@@ -20,7 +21,7 @@ const clientes = [
   { logo: logoPampa, nombre: "Pampa Energía" },
   { logo: logoOdebrecht, nombre: "Odebrecht" },
   { logo: logoOldelval, nombre: "Oldelval" },
-  { logo: logoYPF, nombre: "YPF" },
+  
 ];
 
 export const ClientesPage = () => {
@@ -55,8 +56,8 @@ export const ClientesPage = () => {
             alt="Clientes"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-sky-950/55" />
-          <div className="relative z-10 flex flex-col justify-center h-full max-w-[1600px] mx-auto px-[34px] md:px-20">
+
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-28 md:pb-36">
             <span className="block text-white/80 text-sm mb-4">L&H Ingeniería</span>
             <h1 className="text-white text-5xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[800px]">
               Nuestros Clientes
@@ -71,7 +72,7 @@ export const ClientesPage = () => {
               Trabajamos junto a las principales empresas del sector oil & gas y petroquímica de Argentina, construyendo relaciones de largo plazo basadas en la confianza, el cumplimiento y la excelencia técnica en cada proyecto.
             </p>
             <p className="text-zinc-500 text-base md:text-lg leading-relaxed max-w-[800px] mt-8">
-              Cada cliente que elige a L&H Ingeniería lo hace sabiendo que detrás de cada obra hay un equipo comprometido con los plazos, la seguridad y la calidad. Nuestro historial habla por sí solo: 8 de cada 10 clientes vuelven a trabajar con nosotros.
+              Cada cliente que elige a Ingeniería L&H lo hace sabiendo que detrás de cada obra hay un equipo comprometido con los plazos, la seguridad y la calidad. Nuestro historial habla por sí solo: 8 de cada 10 clientes vuelven a trabajar con nosotros.
             </p>
           </div>
         </div>

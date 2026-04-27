@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
@@ -28,6 +29,7 @@ const steps = [
 
 export const AlquilerFlotaPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [activeCategory, setActiveCategory] = useState(0);
   const [catImgIndex, setCatImgIndex] = useState(0);
@@ -136,7 +138,10 @@ export const AlquilerFlotaPage = () => {
                 {categories.map((cat, i) => (
                   <button
                     key={i}
-                    onClick={() => handleCategoryClick(i)}
+                    onClick={() => {
+                      if (i === 0) { navigate("/alquiler-de-flota/gruas-elevacion"); return; }
+                      handleCategoryClick(i);
+                    }}
                     className={`w-full text-left px-6 py-5 border-b border-zinc-100 flex items-center justify-between transition-all duration-200 ${
                       activeCategory === i
                         ? "bg-sky-950 text-white border-sky-950"

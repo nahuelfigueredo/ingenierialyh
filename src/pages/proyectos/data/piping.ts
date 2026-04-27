@@ -1,3 +1,14 @@
+import img06 from "@/assets/06.jpg";
+import img062 from "@/assets/06-2.png";
+import img12 from "@/assets/12.png";
+import img10 from "@/assets/10.jpg";
+import img05 from "@/assets/05.png";
+import img024 from "@/assets/02-4.png";
+import imgChimenea from "@/assets/Fabricacion-de-Chimenea.jpg";
+import imgTinglado from "@/assets/TINGLADO.jpg";
+import imgGarantia from "@/assets/garantia.jpeg";
+import imgGarantia2 from "@/assets/garantia2.png";
+
 export type Obra = {
   id: string;
   titulo: string;
@@ -25,8 +36,8 @@ Construcción y montaje de toda la soportería necesaria para el tendido de las 
 Montaje y soldadura de la línea y válvulas para la nueva línea sector Coke A.
 
 Todos los trabajos fueron realizados bajo procedimientos de soldadura calificados y con ensayos no destructivos según requerimientos del cliente.`,
-    imagenPortada: "/src/assets/06.jpg",
-    imagenes: ["/src/assets/06.jpg", "/src/assets/06-2.png"],
+    imagenPortada: img06,
+    imagenes: [img06, img062, img12, img10, img05, img024, imgChimenea, imgTinglado, imgGarantia, imgGarantia2],
   },
   {
     id: "piping-ingenieria-ypf",
@@ -41,8 +52,8 @@ Desarrollo de ingeniería, replanteo APC y propuestas para nuevas ingenierías y
 Coordinación con la Gerencia de Ingeniería y Gerencia de Paros YPF para la planificación y ejecución de cada intervención.
 
 Trabajo ejecutado con equipos propios bajo estrictos estándares de seguridad y calidad de YPF.`,
-    imagenPortada: "/src/assets/12.png",
-    imagenes: ["/src/assets/12.png", "/src/assets/10.jpg"],
+    imagenPortada: img12,
+    imagenes: [img12, img10],
   },
   {
     id: "reparaciones-lineas-vapor",
@@ -59,7 +70,7 @@ Amolado de extremos hasta metal base en buen estado para garantizar la calidad d
 Instalación de nuevos tramos de cañería con materiales certificados y soldadura bajo procedimientos calificados.
 
 Prueba hidráulica y puesta en servicio con supervisión del cliente.`,
-    imagenPortada: "/src/assets/garantia.jpeg",
-    imagenes: ["/src/assets/garantia.jpeg", "/src/assets/TINGLADO.jpg"],
+    imagenPortada: imgGarantia,
+    imagenes: [imgGarantia, imgTinglado],
   },
 ];

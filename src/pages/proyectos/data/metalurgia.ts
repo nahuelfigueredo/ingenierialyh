@@ -1,3 +1,6 @@
+import imgGarantia from "@/assets/garantia.jpeg";
+import imgChimenea from "@/assets/Fabricacion-de-Chimenea.jpg";
+
 export type Obra = {
   id: string;
   titulo: string;
@@ -23,8 +26,8 @@ Corte de costuras y tramos de cañería afectados. Amolado de extremos hasta met
 Soldadura con procedimientos calificados y materiales certificados. Aplicación de ensayos no destructivos (radiografía, ultrasonido y líquidos penetrantes).
 
 Prueba hidráulica final y entrega con documentación técnica completa.`,
-    imagenPortada: "/src/assets/garantia.jpeg",
-    imagenes: ["/src/assets/garantia.jpeg", "/src/assets/Fabricacion-de-Chimenea.jpg"],
+    imagenPortada: imgGarantia,
+    imagenes: [imgGarantia, imgChimenea],
   },
   {
     id: "caldereria-refineria",
@@ -41,7 +44,7 @@ Aplicación de ensayos no destructivos certificados: radiografía industrial, ul
 Tratamientos térmicos post-soldadura (PWHT) según requerimientos de normas ASME y del cliente.
 
 Entrega con dossier técnico completo incluyendo certificados de materiales, procedimientos y resultados de END.`,
-    imagenPortada: "/src/assets/Fabricacion-de-Chimenea.jpg",
-    imagenes: ["/src/assets/Fabricacion-de-Chimenea.jpg", "/src/assets/garantia.jpeg"],
+    imagenPortada: imgChimenea,
+    imagenes: [imgChimenea, imgGarantia],
   },
 ];

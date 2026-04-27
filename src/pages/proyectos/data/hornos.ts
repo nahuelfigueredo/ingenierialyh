@@ -1,3 +1,8 @@
+import imgTinglado from "@/assets/TINGLADO.jpg";
+import imgGarantia from "@/assets/garantia.jpeg";
+import imgChimenea from "@/assets/Fabricacion-de-Chimenea.jpg";
+import img10 from "@/assets/10.jpg";
+
 export type Obra = {
   id: string;
   titulo: string;
@@ -23,8 +28,8 @@ Se ejecutó la prefabricación de líneas de Ø10" A335 P11, con 100% de radiogr
 Se realizó el desmontaje de las chimeneas de ambos hornos para evaluación y reparación de sectores afectados.
 
 Todos los trabajos fueron ejecutados bajo procedimientos de soldadura calificados y con inspección de terceros certificados.`,
-    imagenPortada: "/src/assets/TINGLADO.jpg",
-    imagenes: ["/src/assets/TINGLADO.jpg", "/src/assets/garantia.jpeg"],
+    imagenPortada: imgTinglado,
+    imagenes: [imgTinglado, imgGarantia],
   },
   {
     id: "mantenimiento-hornos-lp",
@@ -39,7 +44,7 @@ Reparación de sectores afectados por erosión y corrosión con materiales de al
 Puesta en marcha asistida con monitoreo de temperatura y presión durante el arranque.
 
 Trabajo ejecutado durante parada programada con cumplimiento estricto del cronograma de reanudación de operaciones.`,
-    imagenPortada: "/src/assets/Fabricacion-de-Chimenea.jpg",
-    imagenes: ["/src/assets/Fabricacion-de-Chimenea.jpg", "/src/assets/10.jpg"],
+    imagenPortada: imgChimenea,
+    imagenes: [imgChimenea, img10],
   },
 ];

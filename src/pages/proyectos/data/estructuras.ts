@@ -1,3 +1,8 @@
+import img12 from "@/assets/12.png";
+import img062 from "@/assets/06-2.png";
+import img05 from "@/assets/05.png";
+import img10 from "@/assets/10.jpg";
+
 export type Obra = {
   id: string;
   titulo: string;
@@ -23,8 +28,8 @@ Más de 90 obras ejecutadas en Refinería La Plata, CIE Ensenada y Puerto La Pla
 Fabricación en taller con control dimensional y verificación de materiales. Montaje en campo con grúas y equipos de elevación propios.
 
 Coordinación permanente con las áreas de operación del cliente para minimizar impacto en la producción.`,
-    imagenPortada: "/src/assets/12.png",
-    imagenes: ["/src/assets/12.png", "/src/assets/06-2.png"],
+    imagenPortada: img12,
+    imagenes: [img12, img062],
   },
   {
     id: "equipos-plaza-huincul",
@@ -39,7 +44,7 @@ Instalación de plataformas de acceso, escaleras y barandas en instalaciones ind
 Trabajos de calderería y herrería especializada para la adaptación de equipos existentes.
 
 Ejecución con equipos propios y personal certificado, con cumplimiento de todos los requerimientos HSE del cliente.`,
-    imagenPortada: "/src/assets/05.png",
-    imagenes: ["/src/assets/05.png", "/src/assets/10.jpg"],
+    imagenPortada: img05,
+    imagenes: [img05, img10],
   },
 ];

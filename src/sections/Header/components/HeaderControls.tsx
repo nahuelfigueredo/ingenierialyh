@@ -8,8 +8,7 @@ type HeaderControlsProps = {
 
 export const HeaderControls = ({ onMenuOpen }: HeaderControlsProps) => {
   return (
-    <div className="flex items-center">
-      <LanguageSelector />
+    <div className="flex items-center md:-mt-24">
       <SearchForm />
       <MenuButton onOpen={onMenuOpen} />
     </div>

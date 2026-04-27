@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export type ProjectCardProps = {
   href: string;
   imageClass: string;
@@ -23,7 +25,7 @@ export const ProjectCard = ({
         hasBorderClass ? "mr-5" : ""
       }`}
     >
-      <a href={href} className="block w-full h-full bg-white">
+      <Link to={href} className="block w-full h-full bg-white">
         
         {/* Image */}
         <div className="w-full overflow-hidden">
@@ -67,7 +69,7 @@ export const ProjectCard = ({
 
         </div>
 
-      </a>
+      </Link>
     </li>
   );
 };

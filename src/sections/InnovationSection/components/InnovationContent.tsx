@@ -30,17 +30,22 @@ export const InnovationContent = () => {
           Cómo lo hacemos
         </span>
         <h2 className="text-sky-950 text-2xl md:text-[32px] leading-tight tracking-[-0.5px] mb-6">
-          Ingeniería propia con precisión y control
+          Control y eficiencia en ingeniería
         </h2>
         <p className="leading-[25.6px]">
-          Desarrollamos ingeniería in-house para cada proyecto: relevamiento de instalaciones, replanteo APC,
-          confección de planos y cómputos propios. Esto nos permite controlar cada etapa del proceso
-          con rigor técnico y sin depender de terceros.
+          Desarrollamos ingeniería aplicada en cada proyecto, permitiendo
+          controlar cada etapa del proceso con precisión técnica y eficiencia
+          operativa. Integramos planificación, análisis de recursos y
+          coordinación en campo para optimizar tiempos de ejecución y asegurar
+          resultados consistentes.
         </p>
         <p className="leading-[25.6px] mt-4">
-          Aplicamos controles de calidad estrictos en todas las uniones soldadas —radiografiado 100%
-          y tratamientos térmicos— garantizando que cada obra cumpla con las normas ASME y las
-          especificaciones del cliente.
+          Aseguramos la calidad mediante controles rigurosos en procesos
+          críticos, cumpliendo con normas internacionales y garantizando
+          resultados confiables en cada obra. Nuestro enfoque se basa en la
+          mejora continua, la trazabilidad de los procesos y el cumplimiento
+          estricto de los estándares de seguridad y calidad exigidos por la
+          industria.
         </p>
       </div>
 
@@ -54,18 +59,18 @@ export const InnovationContent = () => {
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           <div className="shrink-0 w-[75vw] md:w-auto snap-start border-l-2 border-sky-950 pl-6">
-            <h3 className="text-sky-950 font-semibold mb-2">Ingeniería de detalle</h3>
-            <p className="leading-[25.6px]">Planos, isométricos y cómputos desarrollados por nuestro equipo técnico para cada trabajo específico.</p>
+            <h3 className="text-sky-950 font-semibold mb-2">Planificación de obra</h3>
+            <p className="leading-[25.6px]">Organizamos cada proyecto con una planificación clara de etapas, recursos y tiempos para asegurar una ejecución ordenada.</p>
           </div>
 
           <div className="shrink-0 w-[75vw] md:w-auto snap-start border-l-2 border-sky-950 pl-6">
-            <h3 className="text-sky-950 font-semibold mb-2">Control radiográfico</h3>
-            <p className="leading-[25.6px]">Radiografiado al 100% en uniones críticas, con emisión de informes certificados por personal calificado.</p>
+            <h3 className="text-sky-950 font-semibold mb-2">Coordinación en campo</h3>
+            <p className="leading-[25.6px]">Integramos equipos técnicos y operativos en obra para dar respuesta ágil, seguimiento continuo y cumplimiento de objetivos.</p>
           </div>
 
           <div className="shrink-0 w-[75vw] md:w-auto snap-start border-l-2 border-sky-950 pl-6">
-            <h3 className="text-sky-950 font-semibold mb-2">Tratamientos térmicos</h3>
-            <p className="leading-[25.6px]">Aplicación de PWHT según norma en materiales especiales como A335 P5, P11 y P22, garantizando integridad mecánica.</p>
+            <h3 className="text-sky-950 font-semibold mb-2">Seguridad y calidad</h3>
+            <p className="leading-[25.6px]">Trabajamos con foco en la seguridad, el control de procesos y la calidad de ejecución en cada intervención industrial.</p>
           </div>
         </div>
 

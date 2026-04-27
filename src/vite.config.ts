@@ -9,7 +9,7 @@ const rootDir = fileURLToPath(new URL(".", import.meta.url));
 export default defineConfig({
   plugins: [react()],
   publicDir: "./static",
-  base: "/ingenierialyh/",
+  base: "/",
   css: {
     postcss: {
       plugins: [tailwindcss()],

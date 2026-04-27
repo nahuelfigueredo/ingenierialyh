@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
+import { GaleriaLightbox } from "@/components/GaleriaLightbox";
 import { piping } from "./data/piping";
 
 export const PipingDetallePage = () => {
@@ -23,8 +24,8 @@ export const PipingDetallePage = () => {
       <main>
         <div className="relative h-[420px] md:h-[580px] w-full overflow-hidden">
           <img src={obra.imagenPortada} alt={obra.titulo} className="absolute inset-0 w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-sky-950/55" />
-          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-16">
+
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-28 md:pb-36">
             <button onClick={() => navigate("/proyectos/piping")} className="text-white/70 text-sm mb-6 hover:text-white text-left">
               ← Volver a Piping
             </button>
@@ -49,13 +50,7 @@ export const PipingDetallePage = () => {
           <div className="bg-zinc-100 py-[60px] md:py-[80px]">
             <div className="mx-auto max-w-[1600px] px-[34px] md:px-20">
               <h2 className="text-sky-950 text-2xl font-light mb-8 tracking-[-1px]">Galería</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {obra.imagenes.map((img, i) => (
-                  <div key={i} className="h-[300px] overflow-hidden">
-                    <img src={img} alt={`${obra.titulo} ${i + 1}`} className="w-full h-full object-cover" />
-                  </div>
-                ))}
-              </div>
+              <GaleriaLightbox imagenes={obra.imagenes} titulo={obra.titulo} />
             </div>
           </div>
         )}

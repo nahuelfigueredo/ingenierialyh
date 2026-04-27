@@ -3,12 +3,10 @@ import { useCallback, useRef, useState } from "react";
 const videos = [
   {
     src: "/videos/avances.mp4",
-    date: "diciembre 2025",
     title: "Avance de obra en nuestra nueva sede corporativa",
   },
   {
     src: "/videos/avances1.mp4",
-    date: "diciembre 2025",
     title: "Avance de montaje y trabajos en obra",
   },
 ];
@@ -91,8 +89,7 @@ export const NewsCarousel = () => {
                 className="w-full rounded-sm aspect-video object-cover bg-black pointer-events-auto"
                 onMouseDown={(e) => e.stopPropagation()}
               />
-              <p className="mt-3 leading-[25.6px] text-sm">{video.date}</p>
-              <p className="mt-1 text-sky-950 text-lg md:text-xl leading-snug font-medium">{video.title}</p>
+              <p className="mt-3 text-sky-950 text-lg md:text-xl leading-snug font-medium">{video.title}</p>
             </div>
           ))}
         </div>

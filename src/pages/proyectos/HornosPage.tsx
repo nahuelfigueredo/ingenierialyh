@@ -19,8 +19,8 @@ export const HornosPage = () => {
         {/* Hero */}
         <div className="relative h-[380px] md:h-[500px] w-full overflow-hidden">
           <img src={heroBg} alt="Hornos" className="absolute inset-0 w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-sky-950/50" />
-          <div className="relative z-10 flex flex-col justify-center h-full max-w-[1600px] mx-auto px-[34px] md:px-20">
+
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-28 md:pb-36">
             <span className="block text-white/80 text-sm mb-4">Nuestros Proyectos</span>
             <h1 className="text-white text-5xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[800px]">
               Hornos Industriales

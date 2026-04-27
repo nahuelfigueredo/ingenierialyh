@@ -11,10 +11,7 @@ export const Footer = () => {
 
         {/* Logo + tagline */}
         <div className="col-span-2 md:col-span-1 flex flex-col gap-3 md:gap-4">
-          <img src={logo} alt="L&H Ingeniería" className="h-12 w-auto object-contain" />
-          <p className="text-sm text-white/60 leading-relaxed">
-            Montaje y mantenimiento industrial con seguridad, precisión y cumplimiento.
-          </p>
+          <img src={logo} alt="L&H Ingeniería" className="h-36 w-auto object-contain" />
         </div>
 
         {/* Nav col 1 */}

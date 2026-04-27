@@ -7,7 +7,7 @@ type HeaderProps = {
 export const Header = ({ onMenuOpen }: HeaderProps) => {
   return (
     <header className="absolute inset-x-0 top-0 z-[99] w-full text-white">
-      <div className="relative w-full pt-[35px] md:pt-[60px]">
+      <div className="relative w-full pt-[20px] md:pt-[35px]">
         <HeaderNav onMenuOpen={onMenuOpen} />
       </div>
     </header>

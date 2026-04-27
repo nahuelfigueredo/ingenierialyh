@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import brandLogo from "@/assets/Logo-original-2-blanco-1.png";
+import { useNavigate, useLocation } from "react-router-dom";
+import brandLogo from "@/assets/logoprueba5.png";
 
 type MobileMenuProps = {
 	isOpen: boolean;
@@ -61,6 +61,7 @@ const menuItems = [
 
 export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 	const navigate = useNavigate();
+	const { pathname } = useLocation();
 
 	useEffect(() => {
 		document.body.style.overflow = isOpen ? "hidden" : "";
@@ -78,6 +79,10 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 			navigate(targetId);
 			return;
 		}
+		if (pathname !== "/") {
+			navigate("/", { state: { scrollTo: targetId } });
+			return;
+		}
 		setTimeout(() => {
 			const el = document.getElementById(targetId);
 			if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -90,14 +95,14 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 				isOpen ? "translate-x-0" : "translate-x-full"
 			}`}
 		>
-			<div className="flex items-center justify-between px-8 py-8 md:px-20">
-				<button type="button" className="block h-[52px] w-[210px] md:h-[84px] md:w-[338px]" onClick={handleNavigation("hero-section")}>
+			<div className="flex items-center justify-between px-8 py-6 md:px-20">
+				<button type="button" className="block h-[110px] w-[440px] md:h-[150px] md:w-[600px]" onClick={handleNavigation("hero-section")}>
 					<img src={brandLogo} alt="Ingenieria LYH" className="block h-full w-full object-contain object-left" />
 				</button>
 
 				<button
 					onClick={onClose}
-					className="flex items-center gap-2.5 bg-transparent p-0 text-white"
+					className="flex items-center gap-2.5 bg-transparent p-0 text-white self-center"
 					aria-label="Cerrar menú"
 				>
 					<span className="relative block h-3 w-4 overflow-hidden">
@@ -143,8 +148,8 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 			</nav>
 
 			<div className="border-t border-white/10 px-8 py-8 md:px-20">
-				<button type="button" className="text-sm text-white/60 transition-colors hover:text-white" onClick={handleNavigation("footer-section")}>
-					Accedé al Grupo Ingeniería LYH →
+				<button type="button" className="text-sm text-white/60 transition-colors hover:text-white" onClick={handleNavigation("/proveedores")}>
+					Proveedores →
 				</button>
 			</div>
 		</div>

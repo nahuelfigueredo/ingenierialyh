@@ -11,7 +11,7 @@ export const HeroBackground = () => {
         playsInline
         preload="auto"
         className="absolute h-full w-full object-cover"
-        style={{ objectPosition: "center 90%" }}
+        style={{ objectPosition: "center 100%" }}
       />
     </div>
   );

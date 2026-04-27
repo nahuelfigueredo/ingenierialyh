@@ -18,8 +18,7 @@ export const MisionPage = () => {
         {/* Hero */}
         <div className="relative h-[500px] md:h-[640px] w-full overflow-hidden">
           <img src={heroBg} alt="Misión, visión y valores" className="absolute inset-0 w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-sky-950/40" />
-          <div className="relative z-10 flex flex-col justify-center h-full max-w-[1600px] mx-auto px-[34px] md:px-20">
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-28 md:pb-36">
             <span className="block text-white/80 text-sm mb-4">Misión, visión y valores</span>
             <h1 className="text-white text-5xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[800px]">
               Ingeniería que transforma
@@ -46,7 +45,6 @@ export const MisionPage = () => {
         {/* Visión — foto + cuadrado superpuesto */}
         <div className="relative h-[500px] md:h-[640px] w-full overflow-visible">
           <img src={visionBg} alt="Visión" className="absolute inset-0 w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-sky-950/40" />
         </div>
         <div className="relative z-10 -mt-32 bg-white py-[60px] md:py-[80px] shadow-md border-t border-zinc-200">
           <div className="mx-auto max-w-[1600px] px-[34px] md:px-20 flex flex-col md:flex-row gap-10 md:gap-24">

@@ -22,7 +22,7 @@ export const SearchForm = () => {
           onClick={() => setExpanded(!expanded)}
           className="bg-transparent p-0"
         >
-          <span className="inline-block h-[15px] w-[15px]">
+          <span className="inline-block h-[19px] w-[19px]">
             <img
               src="https://c.animaapp.com/mny151nwX361MY/assets/icon-3.svg"
               alt="Buscar"

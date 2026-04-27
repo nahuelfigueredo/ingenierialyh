@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
-import heroBg from "@/assets/100_1877.jpg";
+import heroBg from "@/assets/prueba7.jpeg";
 import obraImg from "@/assets/erstructura.png";
 
 export const MercadosPage = () => {
@@ -17,8 +17,7 @@ export const MercadosPage = () => {
         {/* Hero */}
         <div className="relative h-[500px] md:h-[640px] w-full overflow-hidden">
           <img src={heroBg} alt="Mercados" className="absolute inset-0 w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-sky-950/40" />
-          <div className="relative z-10 flex flex-col justify-center h-full max-w-[1600px] mx-auto px-[34px] md:px-20">
+          <div className="relative z-10 flex flex-col justify-end h-full max-w-[1600px] mx-auto px-[34px] md:px-20 pb-28 md:pb-36">
             <span className="block text-white/80 text-sm mb-4">Servicios</span>
             <h1 className="text-white text-5xl md:text-7xl font-light leading-tight tracking-[-1px] max-w-[800px]">
               Donde la industria toma forma
@@ -34,7 +33,7 @@ export const MercadosPage = () => {
             </div>
             <div className="md:w-3/4">
               <p className="text-sky-950 text-xl md:text-3xl leading-relaxed">
-                L&H Ingeniería opera en los sectores más exigentes de la industria argentina. Nuestra experiencia en oil & gas, energía y petroquímica nos permite adaptarnos a cada entorno productivo con autonomía técnica y altos estándares de seguridad.
+                Ingenieria l&h opera en los sectores más exigentes de la industria argentina. Nuestra experiencia en oil & gas, energía y petroquímica nos permite adaptarnos a cada entorno productivo con autonomía técnica y altos estándares de seguridad.
               </p>
             </div>
           </div>
